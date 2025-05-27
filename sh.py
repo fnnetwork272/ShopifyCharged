@@ -581,7 +581,7 @@ Bot by: ElectraOp
 """
 
 # Telegram Bot Configuration
-TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"  # Replace with your bot token
+TOKEN = "8009942983:AAFmR3uuFuCw8_mY5ucOgVA-MQGNFMYGV30"  # Replace with your bot token
 checking_tasks = {}
 
 # /start command handler
