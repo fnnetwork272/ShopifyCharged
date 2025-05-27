@@ -11,3 +11,4 @@ beautifulsoup4
 nest_asyncio
 pyuseragents
 telethon
+fake_useragent
