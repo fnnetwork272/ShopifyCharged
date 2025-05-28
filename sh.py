@@ -28,7 +28,7 @@ COLLECTION_NAME = "users"
 OWNER_ID = 7593550190  # Replace with your Telegram user ID
 
 # Proxy Configuration
-PROXIES_ENABLED = True  # Set to False to disable proxies
+PROXIES_ENABLED = False  # Set to False to disable proxies
 PROXIES_FILE = "proxies.txt"
 
 # Load Proxies
