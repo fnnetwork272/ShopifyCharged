@@ -883,7 +883,7 @@ async def batch_check(update, context, cards):
     del checking_tasks[user_id]
 
 # Telegram Bot Configuration
-TOKEN = "8009942983:AAFmR3uuFuCw8_mY5ucOgVA-MQGNFMYGV30"  # Replace with your bot token
+TOKEN = "8181079198:AAFIE0MVuCPWaC0w1HbBsHlCLJKKGpbDneM"  # Replace with your bot token
 checking_tasks = {}
 
 # /start command handler
