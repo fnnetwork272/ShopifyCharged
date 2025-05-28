@@ -12,3 +12,5 @@ nest_asyncio
 pyuseragents
 telethon
 fake_useragent
+socks
+socket
