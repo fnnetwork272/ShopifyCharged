@@ -20,7 +20,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(level
 logger = logging.getLogger(__name__)
 
 # MongoDB Configuration
-MONGO_URI = "mongodb://localhost:27017/"
+MONGO_URI = "mongodb+srv://ElectraOp:BGMI272@cluster0.1jmwb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 DB_NAME = "shopify_bot_db"
 COLLECTION_NAME = "users"
 
@@ -909,7 +909,7 @@ async def batch_check(update, context, cards):
     del checking_tasks[user_id]
 
 # Telegram Bot Configuration
-TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"  # Replace with your bot token
+TOKEN = "8181079198:AAFIE0MVuCPWaC0w1HbBsHlCLJKKGpbDneM"  # Replace with your bot token
 checking_tasks = {}
 
 # /start command handler
