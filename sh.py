@@ -596,7 +596,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "🔥 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐅𝐍 𝐌𝐀𝐒𝐒 𝐂𝐇𝐄𝐂𝐊𝐄𝐑 𝐁𝐎𝐓!\n\n"
         "🔥 𝐔𝐬𝐞 /sh 𝐓𝐨 𝐂𝐡𝐞𝐜𝐤 𝐒𝐢𝐧𝐠𝐥𝐞 𝐂𝐂\n"
         "🔥 𝐔𝐬𝐞 /stop 𝐓𝐨 𝐒𝐭𝐨𝐩 𝐂𝐡𝐞𝐜𝐤𝐢𝐧𝐠\n"
-        "📁 𝐒𝐞𝐧𝐝 𝐂𝐨𝐦𝐛𝐨 𝐅𝐢𝐥𝐞 𝐎𝐫 𝐄𝐥𝐬𝐞 𝐔𝐬𝐞 𝐁𝐮𝐭𝐭�{o𝐧 𝐁𝐞𝐥𝐨𝐰:",
+        "📁 𝐒𝐞𝐧𝐝 𝐂𝐨𝐦𝐛𝐨 𝐅𝐢𝐥𝐞 𝐎𝐫 𝐄𝐥𝐬𝐞 𝐔𝐬𝐞 𝐁𝐮𝐭𝐭o𝐧 𝐁𝐞𝐥𝐨𝐰:",
         reply_markup=reply_markup
     )
 
@@ -781,7 +781,7 @@ async def handle_file(update: Update, context: ContextTypes.DEFAULT_TYPE):
                      f"[❌] 𝐃𝐞𝐜𝐥𝐢𝐧𝐞𝐝: {declined}\n"
                      f"[✪] 𝐂𝐡𝐞𝐜𝐤𝐞𝐝: {charged + declined}/{total}\n"
                      f"[✪] 𝐓𝐨𝐭𝐚𝐥: {total}\n"
-                     f"[✪] 𝐃𝐮𝐫𝐚𝐭𝐢�{o𝐧: {duration:.2f} seconds\n"
+                     f"[✪] 𝐃𝐮𝐫𝐚𝐭𝐢o𝐧: {duration:.2f} seconds\n"
                      f"[✪] 𝐀𝐯𝐠 𝐒𝐩𝐞𝐞𝐝: {speed:.2f} cards/sec\n"
                      f"[✪] 𝐒𝐮𝐜𝐜𝐞𝐬𝐬 𝐑𝐚𝐭𝐞: {success_rate:.1f}%\n"
                      f"━━━━━━━━━━━━━━━━━━━━━━\n"
