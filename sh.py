@@ -14,7 +14,6 @@ import io
 import os
 import logging
 from pymongo import MongoClient
-import socks
 import socket
 
 # Configure Logging
