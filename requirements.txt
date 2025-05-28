@@ -13,4 +13,3 @@ pyuseragents
 telethon
 fake_useragent
 socks
-socket
