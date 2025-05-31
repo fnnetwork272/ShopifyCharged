@@ -1258,7 +1258,7 @@ async def single_check(update: Update, context: ContextTypes.DEFAULT_TYPE):
             f"[⌬]𝗧𝗶𝗺𝗲 -» {time_taken}\n"
             f"[⌬]𝗣𝗿𝗼𝘅𝘆 -» {proxy_status}\n"
             f"[⌬]𝗖𝗵𝐞𝐜𝐤𝐞𝐝 𝐁𝐲 -» {checked_by}\n"
-            f"[み]𝗕𝗼𝘁 -» <a href='tg://user?id=8009942983'>𝙁𝙉 𝘽3 𝘼𝙐𝙏𝙃</a>"
+            f"[み]𝗕𝗼𝘁 -» <a href='tg://user?id=8009942983'>𝙁𝙉 𝙎𝙃𝙊𝙋𝙄𝙁𝙔</a>"
         )
     else:
         response_text = (
@@ -1272,7 +1272,7 @@ async def single_check(update: Update, context: ContextTypes.DEFAULT_TYPE):
             f"[⌬]𝗧𝗶𝗺𝗲 -» {time_taken}\n"
             f"[⌬]𝗣𝗿𝗼𝘅𝘆 -» {proxy_status}\n"
             f"[⌬]𝗖𝗵𝐞𝐜𝐤𝐞𝐝 𝐁𝐲 -» {checked_by}\n"
-            f"[み]𝗕𝗼𝘁 -» <a href='tg://user?id=8009942983'>𝙁𝙉 𝘽3 𝘼𝙐𝙏𝙃</a>"
+            f"[み]𝗕𝗼𝘁 -» <a href='tg://user?id=8009942983'>𝙁𝙉 𝙎𝙃𝙊𝙋𝙄𝙁𝙔</a>"
         )
     
     await update.message.reply_text(response_text, parse_mode='HTML')
@@ -1304,7 +1304,7 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE):
             await query.edit_message_text("No active checking process to stop.")
     elif query.data == 'help':
         help_text = (
-            "🤖 <b>FN B3 AUTH Bot Help</b>\n\n"
+            "🤖 <b>𝙁𝙉 𝙎𝙃𝙊𝙋𝙄𝙁𝙔 Bot Help</b>\n\n"
             "🔑 <b>Key System</b>\n"
             "1. Use /redeem &lt;key&gt; to activate premium access\n"
             "2. Contact @FNxELECTRA for keys\n\n"
@@ -1445,7 +1445,7 @@ async def handle_file(update: Update, context: ContextTypes.DEFAULT_TYPE):
                     f"[⌬]𝗧𝗶𝗺𝗲 -» {time_taken}\n"
                     f"[⌬]𝗣𝗿𝗼𝘅𝘆 -» {proxy_status}\n"
                     f"[⌬]𝗖𝗵𝐞𝐜𝐤𝐞𝐝 𝐁𝐲 -» {checked_by}\n"
-                    f"[み]𝗕𝗼𝘁 -» <a href='tg://user?id=8009942983'>𝙁𝙉 𝘽3 𝘼𝙐𝙏𝙃</a>"
+                    f"[み]𝗕𝗼𝘁 -» <a href='tg://user?id=8009942983'>𝙁𝙉 𝙎𝙃𝙊𝙋𝙄𝙁𝙔</a>"
                 )
             else:
                 declined += 1
@@ -1460,7 +1460,7 @@ async def handle_file(update: Update, context: ContextTypes.DEFAULT_TYPE):
                     f"[⌬]𝗧𝗶𝗺𝗲 -» {time_taken}\n"
                     f"[⌬]𝗣𝗿𝗼𝘅𝘆 -» {proxy_status}\n"
                     f"[⌬]𝗖𝗵𝐞𝐜𝐤𝐞𝐝 𝐁𝐲 -» {checked_by}\n"
-                    f"[み]𝗕𝗼𝘁 -» <a href='tg://user?id=8009942983'>𝙁𝙉 𝘽3 𝘼𝙐𝙏𝙃</a>"
+                    f"[み]𝗕𝗼𝘁 -» <a href='tg://user?id=8009942983'>𝙁𝙉 𝙎𝙃𝙊𝙋𝙄𝙁𝙔</a>"
                 )
             
             await context.bot.send_message(
