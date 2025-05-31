@@ -13,3 +13,4 @@ pyuseragents
 telethon
 fake_useragent
 socks
+aiohttp_proxy
