@@ -15,4 +15,4 @@ fake_useragent
 socks
 aiohttp_proxy
 aiohttp_socks
-Semaphore
+semaphore
