@@ -18,8 +18,7 @@ import logging
 import aiohttp
 import asyncio
 from aiohttp_socks import ProxyConnector
-from concurrent.futures import Semaphore
-
+from multiprocessing import Semaphore
 # MongoDB Setup
 MONGO_URI = "mongodb+srv://ElectraOp:BGMI272@cluster0.1jmwb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 DB_NAME = "fn_bot"
