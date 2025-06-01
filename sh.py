@@ -741,7 +741,7 @@ async def sh(card_input: str):
                 'metafields': [],
                 'analytics': {
                     'requestUrl': f'https://www.buildingnewfoundations.com/checkouts/cn/{tok}',
-                    'pageId': 'bd9e863b-CD45-4D07-33A
+                    'pageId': 'bd9e863b-CD45-4D07-33A'
             'operationName': 'SubmitForCompletion',
         }
 
