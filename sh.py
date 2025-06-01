@@ -846,7 +846,7 @@ Bot by: ElectraOp
                     log_event("INFO", f"Card approved: {full_card}", None)
                 else:
                     # Use the reliable method you had before
-                    fff = find_between(text, '"code":"', '"') or "Unknown"
+                    fff = find_between(text, '"code":"', "','"')
                     
                     # If we didn't find it, try alternative patterns
                     if fff == "Unknown":
