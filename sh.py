@@ -1393,7 +1393,7 @@ async def handle_file(update: Update, context: ContextTypes.DEFAULT_TYPE):
                     f"[ϟ]𝗜𝗻𝗳𝗼 -» {card_info}\n"
                     f"[ϟ]𝗜𝘀𝘀𝘂𝗲𝐫 -» {issuer} 🏛\n"
                     f"[ϟ]𝗖𝗼𝘂𝗻𝘁𝗿𝘆 -» {country_display}\n"
-                    f"[⌬]𝗧𝗶𝗺𝗲 -» {time_taken}\"
+                    f"[⌬]𝗧𝗶𝗺𝗲 -» {time_taken}\n"
                     f"[⌬]𝗣𝗿𝗼𝘅𝘆 -» {proxy_status}\n"
                     f"[⌬]𝗖𝗵𝐞𝐜𝐤𝐞𝐝 𝐁𝐲 -» {checked_by}\n"
                     f"[み]𝗕𝗼𝘁 -» <a href='tg://user?id=8009942983'>𝙁𝙉 𝘽3 𝘼𝙐𝙏𝙃</a>"
