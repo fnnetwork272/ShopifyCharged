@@ -253,7 +253,7 @@ def parse_card(card_input: str):
         yy = parts[2].strip()
         cvc = parts[3].strip()
         
-        cc = " ".join(cc_raw)[i:i+4] for i in range(0, len(cc_raw), 4)
+        cc = " ".join(cc_raw[i:i+4] for i in range(0, len(cc_raw), 4)
         mm = str(int(mm))
         
         # Handle different year formats
