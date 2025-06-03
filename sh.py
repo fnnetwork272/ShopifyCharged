@@ -500,7 +500,7 @@ async def sh(card_input: str):
                 'issue_number': '',
                 'name': f'{rfirst} {rlast}',
             },
-            'payment_session_scope': 'buildingnewfoundations.com',
+            'payment_session_scope': 'healthyfocus.com.au',
         }
         try:
             async with r.post('https://healthyfocus.com.au/sessions', headers=headers, json=json_data, timeout=30) as response:
