@@ -503,7 +503,7 @@ async def sh(card_input: str):
             'payment_session_scope': 'healthyfocus.com.au',
         }
         try:
-            async with r.post('https://healthyfocus.com.au/sessions', headers=headers, json=json_data, timeout=30) as response:
+            async with r.post('https://checkout.pci.shopifyinc.com/sessions', headers=headers, json=json_data, timeout=30) as response:
                 try:
                     res_json = await response.json()
                     sid = res_json['id']
