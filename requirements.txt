@@ -16,3 +16,4 @@ socks
 aiohttp_proxy
 aiohttp_socks
 semaphore
+motor
