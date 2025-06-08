@@ -629,7 +629,7 @@ async def sh14(card_input: str, proxy_manager):
             proxy_status = "Dead"
             return ShResult("Final request timed out", time.time()-start_time, proxy_status, "Error", f"{type} - {level} - {brand}", bank, country, flag, currency, "")
         except Exception as e:
-            return ShResult("Final request failed", time.time()-start_time, proxy_status, "Error", f"{type} - {level} - {brand}" bank, country, flag, currency, str(e))
+            return ShResult("Final request failed", time.time()-start_time, proxy_status, "Error", f"{type} - {level} - {brand}", bank, country, flag, currency, str(e))
 
         # If we are here, then the first request did not have the keywords, so we try up to 3 retries
         max_retries = 3
