@@ -53,7 +53,7 @@ class ProxyManager:
         self.proxies = []
         self.current_index = 0
         self.bad_proxies = set()
-        self.semaphore = asyncio.Semaphore(3)  # Max 3 concurrent checks
+        self.semaphore = asyncio.Semaphore(200)  # Max 3 concurrent checks
         self.last_batch_time = 0
         self.load_proxies()
 
@@ -233,6 +233,34 @@ TOKEN = "8181079198:AAFIE0MVuCPWaC0w1HbBsHlCLJKKGpbDneM"
 # Per-user cooldown tracking
 user_cooldowns = {}
 user_locks = defaultdict(asyncio.Lock)
+
+# Custom filter to handle commands in groups without bot mention
+class GroupCommandFilter(filters.MessageFilter):
+    def __init__(self, command):
+        super().__init__()
+        self.command = command
+
+    def filter(self, message):
+        if message.chat.type not in ['group', 'supergroup']:
+            return False
+        text = message.text or message.caption
+        if not text:
+            return False
+        parts = text.split(maxsplit=1)
+        if not parts[0] == f'/{self.command}':
+            return False
+        return True
+
+# Wrapper for group commands
+async def group_command_wrapper(update: Update, context: ContextTypes.DEFAULT_TYPE, handler):
+    # Set context.args for group commands
+    text = update.message.text or update.message.caption
+    if text:
+        parts = text.split()
+        context.args = parts[1:]
+    else:
+        context.args = []
+    await handler(update, context)
 
 # /start command handler
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -1017,6 +1045,31 @@ def main():
     application.add_handler(CallbackQueryHandler(button, pattern='^gates$'))
     application.add_handler(CallbackQueryHandler(button, pattern='^gate1$'))
     application.add_handler(CallbackQueryHandler(button, pattern='^gate2$'))
+    
+    # Add group command handlers
+    command_handlers = {
+        'start': start,
+        'genkey': genkey,
+        'redeem': redeem,
+        'delkey': delkey,
+        'broadcast': broadcast,
+        'addproxy': add_proxy,
+        'delproxy': del_proxy,
+        'listproxies': list_proxies,
+        'reloadproxies': reload_proxies,
+        'sh': single_check,
+        'msh': multi_check,
+        'sm': single_check_gate2,
+        'msm': multi_check_gate2,
+        'stop': stop,
+    }
+    
+    for command, handler in command_handlers.items():
+        # Add MessageHandler for group commands
+        application.add_handler(MessageHandler(
+            GroupCommandFilter(command),
+            lambda update, context, handler=handler: group_command_wrapper(update, context, handler)
+        ))
     
     # Add error handler
     application.add_error_handler(error_handler)
